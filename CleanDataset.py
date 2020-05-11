@@ -17,8 +17,6 @@ def preprocessing(tweet):
 
     tokens = [ token.translate(table) for token in tokens ]
     
-    tokens = [ token.translate(table) for token in tokens]
-    
     tokens = [ token for token in tokens if token not in stop_words]
     
     tokens = [stemmer.stem(token) for token in tokens]
